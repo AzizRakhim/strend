@@ -21,3 +21,8 @@ body{
     font-family: var(--title-font);
 }
 
+.container{
+    width: 1140px;
+    padding: 12px;
+}
+
