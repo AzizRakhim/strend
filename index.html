@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/col.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <!-- HERO START - AZIZBEK RAKHIMJONOV -->
@@ -20,7 +22,9 @@
                 <div class="row middle between">
                     <div class="site-header__logo">
                         <a class="site-header__link" href="index.html">
-                            <img class="site-header__img" src="https://strend-vue.envytheme.com/_nuxt/img/black-logo.2d0bbd0.png" alt="strand-logo" width="150" height="39">
+                            <img class="site-header__img"
+                                src="https://strend-vue.envytheme.com/_nuxt/img/black-logo.2d0bbd0.png"
+                                alt="strand-logo" width="150" height="39">
                         </a>
                     </div>
                     <div class="cover row middle">
@@ -31,27 +35,27 @@
                                     <i class='bx bx-chevron-down'></i>
                                     <ul class="drop-down">
                                         <li class="drop-down__item">
-                                            <a href="#" class="drop-down__link">
+                                            <a href="index.html" class="drop-down__link">
                                                 Home Demo - 1
                                             </a>
                                         </li>
                                         <li class="drop-down__item">
-                                            <a href="#" class="drop-down__link drop-down__link--active">
+                                            <a href="index.html" class="drop-down__link drop-down__link--active">
                                                 Home Demo - 2
                                             </a>
                                         </li>
                                         <li class="drop-down__item">
-                                            <a href="#" class="drop-down__link">
+                                            <a href="index.html" class="drop-down__link">
                                                 Home Demo - 3
                                             </a>
                                         </li>
                                         <li class="drop-down__item">
-                                            <a href="#" class="drop-down__link">
+                                            <a href="index.html" class="drop-down__link">
                                                 Home Demo - 4
                                             </a>
                                         </li>
                                         <li class="drop-down__item">
-                                            <a href="#" class="drop-down__link">
+                                            <a href="index.html" class="drop-down__link">
                                                 Home Demo - 5
                                             </a>
                                         </li>
@@ -72,7 +76,7 @@
                                                         </a>
                                                     </li>
                                                     <li class="about-drop__item">
-                                                        <a href="#" class="about-drop__link">
+                                                        <a href="about.html" class="about-drop__link">
                                                             about us 2
                                                         </a>
                                                     </li>
@@ -126,22 +130,22 @@
                                             </a>
                                         </li>
                                         <li class="drop-down__item">
-                                            <a href="#" class="drop-down__link">
+                                            <a href="service.html" class="drop-down__link">
                                                 services style two
                                             </a>
                                         </li>
                                         <li class="drop-down__item">
-                                            <a href="#" class="drop-down__link">
+                                            <a href="service.html" class="drop-down__link">
                                                 services style three
                                             </a>
                                         </li>
                                         <li class="drop-down__item">
-                                            <a href="#" class="drop-down__link">
+                                            <a href="service.html" class="drop-down__link">
                                                 services style four
                                             </a>
                                         </li>
                                         <li class="drop-down__item">
-                                            <a href="#" class="drop-down__link">
+                                            <a href="service.html" class="drop-down__link">
                                                 services details
                                             </a>
                                         </li>
@@ -157,7 +161,7 @@
                                             </a>
                                         </li>
                                         <li class="drop-down__item">
-                                            <a href="#" class="drop-down__link">
+                                            <a href="project.html" class="drop-down__link">
                                                 projects details
                                             </a>
                                         </li>
@@ -178,12 +182,12 @@
                                             </a>
                                         </li>
                                         <li class="drop-down__item">
-                                            <a href="#" class="drop-down__link">
+                                            <a href="blog.html" class="drop-down__link">
                                                 blog right sidebar
                                             </a>
                                         </li>
                                         <li class="drop-down__item">
-                                            <a href="#" class="drop-down__link">
+                                            <a href="blog.html" class="drop-down__link">
                                                 blog details
                                             </a>
                                         </li>
@@ -207,7 +211,7 @@
                                     </a>
                                 </li>
                                 <li class="btn-box__item">
-                                    <button class="btn-box__btn search">
+                                    <button class="btn-box__btn search" id="searchBtn">
                                         <i class='bx bx-search'></i>
                                     </button>
                                 </li>
@@ -217,6 +221,22 @@
                                     </a>
                                 </li>
                             </ul>
+                            <div class="search-modal" id="searchModal">
+                                <div class="search-modal__close" id="closeBtn">
+                                    <span class="search-modal__line">
+                                    </span>
+                                    <span class="search-modal__line">
+                                    </span>
+                                </div>
+                                <div class="search-modal__form-box">
+                                    <form action="https://echo.htmlacademy.ru">
+                                        <input class="search-modal__input" type="text" placeholder="Search here...">
+                                        <button class="search-modal__btn" type="submit">
+                                            <i class='bx bx-search'></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,7 +254,9 @@
                             World’s Leading AI & Machine Learning Company
                         </h2>
                         <p class="hero-intro__desc">
-                            ML today are able to supply needful of help, information, and positive experience of maintaining intimacy with customers. Eventually, chatbot ideas bring a pleasant experience of all these qualities into the conversation.
+                            ML today are able to supply needful of help, information, and positive experience of
+                            maintaining intimacy with customers. Eventually, chatbot ideas bring a pleasant experience
+                            of all these qualities into the conversation.
                         </p>
                         <div class="hero-intro__btn-box">
                             <a class="hero-intro__btn demo" href="index.html">
@@ -247,34 +269,48 @@
                     </div>
                     <div class="col-6">
                         <div class="banner">
-                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-1.0b93363.png" alt="banner-img-one" width="120" height="120">
-                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-2.6bcdd66.png" alt="banner-img-two">
-                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-3.ed6f73b.png" alt="banner-img-three">
-                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-4.545c5bd.png" alt="banner-img-four">
-                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-5.5d32b6e.png" alt="banner-img-five">
-                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-6.85c1529.png" alt="banner-img-six">
-                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-7.9c7142e.png" alt="banner-img-seven">
-                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-8.af52358.png" alt="banner-img-seven">
-
+                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-1.0b93363.png"
+                                alt="banner-img-one" width="120" height="120">
+                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-2.6bcdd66.png"
+                                alt="banner-img-two">
+                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-3.ed6f73b.png"
+                                alt="banner-img-three">
+                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-4.545c5bd.png"
+                                alt="banner-img-four">
+                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-5.5d32b6e.png"
+                                alt="banner-img-five">
+                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-6.85c1529.png"
+                                alt="banner-img-six">
+                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-7.9c7142e.png"
+                                alt="banner-img-seven">
+                            <img src="https://strend-vue.envytheme.com/_nuxt/img/banner-8.af52358.png"
+                                alt="banner-img-seven">
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="triangle">
-                <img class="triangle__img" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTQ5Ljg5MSUiIGlkPSJhIj48c3RvcCBzdG9wLWNvbG9yPSIjMDBFOTJCIiBvZmZzZXQ9IjAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0NDRkZBOCIgb2Zmc2V0PSIxMDAlIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggdHJhbnNmb3JtPSJyb3RhdGUoMTMyIDgxLjYyNyAxNjYuMTY0KSIgZD0iTTIgMzIzbDEwLjU5OCAxM0wyMyAzMjN6IiBzdHJva2U9InVybCgjYSkiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iLjY1OSIvPjwvc3ZnPg==" alt="triangle" width="21" height="20">
+                <img class="triangle__img"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTQ5Ljg5MSUiIGlkPSJhIj48c3RvcCBzdG9wLWNvbG9yPSIjMDBFOTJCIiBvZmZzZXQ9IjAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0NDRkZBOCIgb2Zmc2V0PSIxMDAlIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggdHJhbnNmb3JtPSJyb3RhdGUoMTMyIDgxLjYyNyAxNjYuMTY0KSIgZD0iTTIgMzIzbDEwLjU5OCAxM0wyMyAzMjN6IiBzdHJva2U9InVybCgjYSkiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iLjY1OSIvPjwvc3ZnPg=="
+                    alt="triangle" width="21" height="20">
             </div>
             <div class="circle">
-                <img class="circle__img" src="https://strend-vue.envytheme.com/_nuxt/img/shape-3.1831a66.png" alt="circle">
+                <img class="circle__img" src="https://strend-vue.envytheme.com/_nuxt/img/shape-3.1831a66.png"
+                    alt="circle">
             </div>
             <div class="dot">
-                <img class="dot__img" src="https://strend-vue.envytheme.com/_nuxt/img/dot-1.38b4f22.png" alt="dot" width="15" height="15 ">
+                <img class="dot__img" src="https://strend-vue.envytheme.com/_nuxt/img/dot-1.38b4f22.png" alt="dot"
+                    width="15" height="15 ">
             </div>
             <div class="x">
-                <img class="x__img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCAwIDIyIDIyIj4NCiAgPGRlZnM+DQogICAgPHN0eWxlPg0KICAgICAgLmNscy0xIHsNCiAgICAgICAgZm9udC1zaXplOiAyNXB4Ow0KICAgICAgICBmaWxsOiAjMjdlYWM4Ow0KICAgICAgICB0ZXh0LWFuY2hvcjogbWlkZGxlOw0KICAgICAgICBmb250LWZhbWlseTogUm9ib3RvOw0KICAgICAgfQ0KICAgIDwvc3R5bGU+DQogIDwvZGVmcz4NCiAgPHRleHQgaWQ9Il8iIGRhdGEtbmFtZT0iKyIgY2xhc3M9ImNscy0xIiB0cmFuc2Zvcm09Im1hdHJpeCgxLjQzNywgMS40MzQsIC0xLjQzNywgMS40MzQsIC0wLjgzMiwgMjMuMDY2KSI+PHRzcGFuIHg9IjAiPis8L3RzcGFuPjwvdGV4dD4NCjwvc3ZnPg0K" alt="x" width="22" height="22">
+                <img class="x__img"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCAwIDIyIDIyIj4NCiAgPGRlZnM+DQogICAgPHN0eWxlPg0KICAgICAgLmNscy0xIHsNCiAgICAgICAgZm9udC1zaXplOiAyNXB4Ow0KICAgICAgICBmaWxsOiAjMjdlYWM4Ow0KICAgICAgICB0ZXh0LWFuY2hvcjogbWlkZGxlOw0KICAgICAgICBmb250LWZhbWlseTogUm9ib3RvOw0KICAgICAgfQ0KICAgIDwvc3R5bGU+DQogIDwvZGVmcz4NCiAgPHRleHQgaWQ9Il8iIGRhdGEtbmFtZT0iKyIgY2xhc3M9ImNscy0xIiB0cmFuc2Zvcm09Im1hdHJpeCgxLjQzNywgMS40MzQsIC0xLjQzNywgMS40MzQsIC0wLjgzMiwgMjMuMDY2KSI+PHRzcGFuIHg9IjAiPis8L3RzcGFuPjwvdGV4dD4NCjwvc3ZnPg0K"
+                    alt="x" width="22" height="22">
             </div>
             <div class="hero-intro__dot">
-                <img src="https://strend-vue.envytheme.com/_nuxt/img/dot-3.13fe417.png" alt="hero-intro__dot" width="18" height="18">
+                <img src="https://strend-vue.envytheme.com/_nuxt/img/dot-3.13fe417.png" alt="hero-intro__dot" width="18"
+                    height="18">
             </div>
         </div>
     </section>
@@ -286,11 +322,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <a class="site-footer__link" href="#">
-                        <img class="site-footer__img" src="https://strend-vue.envytheme.com/_nuxt/img/white-logo.75b255a.png" alt="strand-logo" width="150" height="39">
+                    <a class="site-footer__link" href="index.html">
+                        <img class="site-footer__img"
+                            src="https://strend-vue.envytheme.com/_nuxt/img/white-logo.75b255a.png" alt="strand-logo"
+                            width="150" height="39">
                     </a>
                     <p class="site-footer__text">
-                        Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore et <br> dolore.
+                        Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor
+                        incididunt ut labore et <br> dolore.
                     </p>
                     <ul class="social row middle">
                         <li class="social__item">
@@ -448,6 +487,15 @@
                 </div>
             </div>
         </div>
+        <div class="site-footer__bg-box">
+            <img class="site-footer__bg-img" src="https://strend-vue.envytheme.com/_nuxt/img/circle-map.951c0db.png"
+                alt="site-footer__bg-img" width="370" height="292">
+        </div>
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </footer>
 
     <!-- FOOTER END -->
@@ -462,4 +510,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
