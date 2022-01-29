@@ -30,9 +30,14 @@ body{
 }
 
 .container{
-    width: 1140px;
+    width: 1320px;
     padding: 0 12px;
 }
+
+/* .container{
+    width: 1140px;
+    padding: 0 12px;
+} */
 
 .pa-fixed-header{
     background-color: var(--bg-color);
