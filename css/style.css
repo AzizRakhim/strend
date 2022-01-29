@@ -52,7 +52,6 @@ body {
     height: 112px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 60px;
 }
 
 .clients-opinion__title {
@@ -233,8 +232,67 @@ body {
     }
 
 }
+.clients-opinion__content{
+    background-color: #fff;
+    width: 710px;
+    height: 230px;
+    box-shadow: 0 0 25px 3px rgb(0 0 0 / 4%);
+    margin: 45px auto ;
+    background-color: #fff;
+    position: relative;
+    padding: 60px 70px 60px 190px;
+    border-radius: 5px;
 
+    }
+
+.clients-opinion__content-background{
+    background-color: #fff;
+    width: 650px;
+    height: 100px;
+    position: absolute;
+    border-radius: 5px;
+    bottom: -15px;
+    left: 30px;
+    z-index: -1;
+}
+.clients-opinion__content-img-box{
+    position: absolute;
+    left: 80px;
+}
+.clients-opinion__content-inner{
+    width: 450px;
+}
+.clients-opinion__content-inner-text{
+    font-family: var(--text-font);
+    font-size: 15px;
+    color: #4a6f8a;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+.clients-opinion__content-list{
+    list-style: none;
+}
+.clients-opinion__icon{
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 20px;
+}
+.clients-opinion__content-img{
+    width: 80px;
+    height: 80px;
+    padding: 5px; 
+    border: 2px solid #f4f5fe;
+}
+.clients-opinion__content-text{
+        margin-top: 10px;
+        font-size: 19px;
+        font-weight: 700;
+        color: var(--title-color);
+        font-family: var(--title-font);
+        text-align: center;
+}
 /* jamoliddin finished clients-opinion */
+/* jamoliddin started ors */
 .ors {
     width: 100%;
     padding: 110px 0 80px;
