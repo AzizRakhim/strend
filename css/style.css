@@ -2886,7 +2886,6 @@ a {
   color: var(--title-color);
   margin-right: 500px;
   position: relative;
-  /* left: -70px; */
 }
 .index-projects__inner{
   margin-bottom: 60px;
@@ -3435,8 +3434,6 @@ a {
 
 /* PROJECTS END ABDULLOH */
 
-/* SERVICE SECTION START ABDULLOH */
-
 .solutions__menu__list {
   list-style: none;
   margin: 40px 0 0 0;
@@ -3476,7 +3473,60 @@ a {
   color: #fff;
 }
 
-/* SERVICE SECTION END ABDULLOH */
+/* ABOUT PRICING SECTION START ABDULLOH */
+
+
+.pricing--second{
+  background-color: #fafafa;
+  padding-top: 110px;
+}
+.plans__item--second{
+  background: #fff;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.plans__item--second:hover{
+  box-shadow: 0 0 40px 3px rgb(0 0 0 / 5%);
+  transition: all 0.5s ease;
+}
+.plans__item--active{
+  box-shadow: 0 0 40px 3px rgb(0 0 0 / 5%);
+}
+.pricing__link{
+  display: inline-block;
+}
+.pricing__link--second{
+  background: #fff;
+}
+.plans__inner--second{
+  text-align: left;
+}
+.inner-list__item--second{
+  position: relative;
+  left: 0;
+}
+.pricing__x__icon--second{
+  top: 52%;
+}
+.pricing__second__circle{
+  position: absolute;
+  bottom: -30px;
+  opacity: 0.4;
+  animation: price-circle 5s linear infinite;
+}
+@keyframes price-circle{
+  from{
+    transform: rotate(0,0);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+.hide{
+  display: none;
+}
+/* ABOUT PRICING SECTION END ABDULLOH */
+
 /* FOOTER START  AZIZBEK RAKHIMJONOV*/
 
 .site-footer{
