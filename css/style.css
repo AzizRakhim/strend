@@ -2379,14 +2379,14 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 13px;
+  transition: all 0.4s ease;
 }
 
 .faeture-list div {
   position: relative;
   display: flex;
   flex-direction: row;
-  color: #333;
-  /* padding-left: 28px; */
+  color: var(--title-color);
   font-family: var(--text-font);
   font-weight: 600;
   font-size: 17px;
@@ -2394,32 +2394,36 @@ a {
 
 .faeture-list div p {
   font-size: 17px;
-  font-size: 15px;
   color: var(--title-color);
   margin-bottom: 0px;
   line-height: 1.8;
   font-family: var(--title-font);
-}
-
-.faeture-list div p::before {
-  content: "✓";
+  display: block;
   position: relative;
-  top: 0;
-  left: -10px;
-  width: 20px;
-  display: inline-block;
-  height: 20px;
-  border-radius: 2px;
-  color: #fff;
-  line-height: 16px;
-  background-color: #ff4800;
-  text-align: center;
-  transition: 0.5s;
-  padding: 2px;
+  font-weight: 600;
 }
 
-.faeture-list div p:hover::before {
-  background-color: #61c628;
+.faeture-list li div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  transition: all 0.6s ease;
+}
+
+.faeture-list li div i {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  font-size: 18px;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  margin: 5px 0 0 0;
+  transition: all 0.6s ease;
+}
+
+.faeture-list li:hover .bx {
+  background-color: var(--hover-color);
 }
 
 .btn {
