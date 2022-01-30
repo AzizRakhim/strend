@@ -42,6 +42,10 @@ a {
 
 /* HEADER START AZIZBEK RAKHIMJONOV */
 
+.dont-show{
+  display: none;
+}
+
 .site-header{
     background-color: transparent;
     padding: 15px 0 20px;
@@ -2302,7 +2306,7 @@ a {
   padding-top: 13px;
 }
 
-.faeture-list span {
+.faeture-list div {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -2313,7 +2317,7 @@ a {
   font-size: 17px;
 }
 
-.faeture-list span p {
+.faeture-list div p {
   font-size: 15px;
   color: #57647c;
   margin-bottom: 0px;
@@ -2321,7 +2325,7 @@ a {
   font-family: "Open Sans";
 }
 
-.faeture-list span p::before {
+.faeture-list div p::before {
   content: "✓";
   position: relative;
   top: 0;
@@ -2338,7 +2342,7 @@ a {
   padding: 2px;
 }
 
-.faeture-list span p:hover::before {
+.faeture-list div p:hover::before {
   background-color: #61c628;
 }
 
