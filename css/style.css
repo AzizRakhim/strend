@@ -2319,7 +2319,7 @@ a {
 }
 
 .faeture-list div p {
-  font-size: 15px;
+  font-size: 17px;
   color: #57647c;
   margin-bottom: 0px;
   line-height: 1.8;
@@ -2479,6 +2479,7 @@ a {
 .solutions-process ul li {
   border-radius: 5px;
   background-color: white;
+  width: 380px;
 }
 
 .solutions-process ul li a{
