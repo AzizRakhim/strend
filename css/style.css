@@ -788,7 +788,7 @@ a {
   position: absolute;
   color: #ff4800;
   background-color: #ff4800;
-  height: 2px;
+  height: 0.5px;
   width: 100%;
   transition: all 0.2s ease;
 }
@@ -1962,7 +1962,6 @@ a {
 }
 .plans__item {
   width: 416px;
-  height: 531px;
   background: linear-gradient(to left bottom,#dee4f3,#e7eaf6,#f0f1f9,#f8f8fc,#fff);
   padding: 30px;
   border-radius: 5px;
@@ -2230,7 +2229,6 @@ a {
 }
 .team__item {
   width: 306px;
-  height: 408px;
   box-shadow: 0px 10px 13px -2px rgba(34, 60, 80, 0.2);
   transition: all 0.5s ease;
 }
