@@ -1316,6 +1316,7 @@ a {
   color: #C8C8C8;
   font-family: var(--text-font);
 }
+
 .trial__btn{
   height: 45px;
   border: none;
@@ -1709,10 +1710,12 @@ a {
   border-radius: 30px;
   padding-left: 20px;
 }
+
 .free-trial__input::placeholder{
   color: #C8C8C8;
   font-family: var(--text-font);
 }
+
 .free-trial__btn{
   height: 45px;
   border: none;
@@ -2320,10 +2323,10 @@ a {
 
 .faeture-list div p {
   font-size: 15px;
-  color: #57647c;
+  color: var(--title-color);
   margin-bottom: 0px;
   line-height: 1.8;
-  font-family: "Open Sans";
+  font-family: var(--title-font);
 }
 
 .faeture-list div p::before {
