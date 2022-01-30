@@ -8,6 +8,9 @@
   <title>Strend</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/col.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -279,43 +282,30 @@
           <div class="topbare-results col-2 middle">
             <p>Showing 1-8 of 14 results</p>
           </div>
-          <div class="topbare-sorting col-4 right">
-            <div class="topbare-dropdown dropdown">
-              <button class="topbare-btn btn shadow-none btn-light" type="button" id="dropdownMenuButton1"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Default sorting
-                <i class="bx bx-chevron-down"></i>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <a class="dropdown-item link" href="#">Default sorting</a>
-                </li>
-                <li>
-                  <a class="dropdown-item link" href="#">Sort by popularity</a>
-                </li>
-                <li>
-                  <a class="dropdown-item link" href="#">Sort by average rating</a>
-                </li>
-                <li>
-                  <a class="dropdown-item link" href="#">Sort by latest</a>
-                </li>
-                <li>
-                  <a class="dropdown-item link" href="#">Sort by price: low to high</a>
-                </li>
-                <li>
-                  <a class="dropdown-item link" href="#">Sort by price: high to low</a>
-                </li>
-                <li>
-                  <a class="dropdown-item link" href="#">Sort by new</a>
-                </li>
+          <div class="topbare-sorting col-4">
+            <label class="dropdown">
+              <div class="dd-button middle">
+                <p>Default sorting</p>
+                <i class="fas fa-angle-down"></i>
+              </div>
+              <input type="checkbox" class="dd-input" id="test" />
+
+              <ul class="dd-menu">
+                <li><a href="#">Default sorting</a></li>
+                <li><a href="#">Sort by popularity</a></li>
+                <li><a href="#">Sort by average rating</a></li>
+                <li><a href="#">Sort by latest</a></li>
+                <li><a href="#">Sort by price: low to high</a></li>
+                <li><a href="#">Sort by price: high to low</a></li>
+                <li><a href="#">Sort by new</a></li>
               </ul>
-            </div>
+            </label>
           </div>
         </div>
         <div class="shoparea__wrapper">
           <!--qo'shildi-->
           <div class="shoparea__slider">
-            <div class="shoparea-collection row slider__item">
+            <div class="shoparea-collection row">
               <div class="shoparea-items col-4 center middle">
                 <div class="items-list">
                   <div class="items-img">
@@ -323,7 +313,7 @@
                       <img src="./image/shopimage1.jpg" alt="shopimage1" />
                       <img src="./image/shopimage2.jpg" alt="" />
                     </a>
-                    <a href="#" class="items-cart__link">
+                    <a href="#" class="items-cartlink">
                       <p>Add To Cart</p>
                       <i class="fas fa-cart-plus"></i>
                     </a>
@@ -349,10 +339,13 @@
                   <div class="items-list">
                     <div class="items-img">
                       <a class="items-link" href="#">
-                        <img src="./image/shopimage3.jpg" alt="shopimage1" />
+                        <img
+                          src="./image/shopimage3.jpg"
+                          alt="shopimage1"
+                        />
                         <img src="./image/shopimage4.jpg" alt="" />
                       </a>
-                      <a href="#" class="items-cart__link">
+                      <a href="#" class="items-cartlink">
                         <p>Add To Cart</p>
                         <i class="fas fa-cart-plus"></i>
                       </a>
@@ -380,10 +373,13 @@
                   <div class="items-list">
                     <div class="items-img">
                       <a class="items-link" href="#">
-                        <img src="./image/shopimage5.jpg" alt="shopimage1" />
+                        <img
+                          src="./image/shopimage5.jpg"
+                          alt="shopimage1"
+                        />
                         <img src="./image/shopimage6.jpg" alt="" />
                       </a>
-                      <a href="#" class="items-cart__link">
+                      <a href="#" class="items-cartlink">
                         <p>Add To Cart</p>
                         <i class="fas fa-cart-plus"></i>
                       </a>
@@ -410,10 +406,13 @@
                   <div class="items-list">
                     <div class="items-img">
                       <a class="items-link" href="#">
-                        <img src="./image/shopimage7.jpg" alt="shopimage1" />
+                        <img
+                          src="./image/shopimage7.jpg"
+                          alt="shopimage1"
+                        />
                         <img src="./image/shopimage8.jpg" alt="" />
                       </a>
-                      <a href="#" class="items-cart__link">
+                      <a href="#" class="items-cartlink">
                         <p>Add To Cart</p>
                         <i class="fas fa-cart-plus"></i>
                       </a>
@@ -440,10 +439,13 @@
                   <div class="items-list">
                     <div class="items-img">
                       <a class="items-link" href="#">
-                        <img src="./image/shopimage9.jpg" alt="shopimage1" />
+                        <img
+                          src="./image/shopimage9.jpg"
+                          alt="shopimage1"
+                        />
                         <img src="./image/shopimage10.jpg" alt="" />
                       </a>
-                      <a href="#" class="items-cart__link">
+                      <a href="#" class="items-cartlink">
                         <p>Add To Cart</p>
                         <i class="fas fa-cart-plus"></i>
                       </a>
@@ -470,10 +472,13 @@
                   <div class="items-list">
                     <div class="items-img">
                       <a class="items-link" href="#">
-                        <img src="./image/shopimage11.jpg" alt="shopimage1" />
+                        <img
+                          src="./image/shopimage11.jpg"
+                          alt="shopimage1"
+                        />
                         <img src="./image/shopimage12.jpg" alt="" />
                       </a>
-                      <a href="#" class="items-cart__link">
+                      <a href="#" class="items-cartlink">
                         <p>Add To Cart</p>
                         <i class="fas fa-cart-plus"></i>
                       </a>
@@ -498,14 +503,25 @@
             </div>
           </div>
           <div class="shoparea__btns center middle">
-            <a class="btns__pages" aria-current="page" href="#">
+            <a class="shoparea__btns-pages" aria-current="page" href="#">
               <i class="fas fa-angle-double-left"></i>
             </a>
-            <a class="btns__pages" aria-current="page" href="#">1</a>
-            <a class="btns__pages active" aria-current="page" href="#">2</a>
-            <a class="btns__pages" aria-current="page" href="#">3</a>
-            <a class="btns__pages" aria-current="page" href="#">4</a>
-            <a class="btns__pages" aria-current="page" href="#">
+            <a class="shoparea__btns-pages" aria-current="page" href="#"
+              >1</a
+            >
+            <a
+              class="shoparea__btns-pages active"
+              aria-current="page"
+              href="#"
+              >2</a
+            >
+            <a class="shoparea__btns-pages" aria-current="page" href="#"
+              >3</a
+            >
+            <a class="shoparea__btns-pages" aria-current="page" href="#"
+              >4</a
+            >
+            <a class="shoparea__btns-pages" aria-current="page" href="#">
               <i class="fas fa-angle-double-right"></i>
             </a>
           </div>
