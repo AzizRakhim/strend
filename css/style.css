@@ -1153,6 +1153,7 @@ a {
 
 /* SMARTAPPROACH END - MIRZOHID */
 /* SOLUTIONS START - MIRZOHID */
+
 .solutions {
   background-color: #f2f6f9;
   position: relative;
@@ -1174,80 +1175,10 @@ a {
   position: relative;
 }
 
-.solutions-process ul {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  gap: 20px;
-}
-
-.solutions-process ul li {
-  border-radius: 5px;
-  background-color: var(--bg-color);
-  width: 380px;
-}
-
-.solutions-process ul li a {
-  display: block;
-  position: relative;
-  padding: 30px 10px 30px 100px;
-  color: #313e5b;
-  font-size: 19px;
-  font-weight: 600;
-  border-radius: 5px;
-  transition: all 0.2s;
-  font-family: var(--text-font);
-}
-
-.solutions-process ul li:nth-of-type(1) {
-  background-color: var(--primary-color);
-  color: var(--bg-color);
-}
-
-.solutions-process ul li a:hover {
-  background-color: var(--primary-color);
-  color: var(--bg-color);
-}
-
 .description__imb-box,
 .description__content {
   padding-left: 30px;
   margin-bottom: 30px;
-}
-
-.danalysis::before,
-.aoptimization::before,
-.ssurveillance::before,
-.hmanagers::before,
-.stengineers::before,
-.itprofessionalas::before {
-  position: absolute;
-  top: 0%;
-  left: 0;
-  font-family: "FontAwesome";
-  font-size: 30px;
-  content: "\f1ea";
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: inline-block;
-  width: 55px;
-  height: 55px;
-  background: linear-gradient(to left bottom,
-      #dee4f3,
-      #e7eaf6,
-      #f0f1f9,
-      #f8f8fc,
-      #fff);
-  text-align: center;
-  line-height: 55px;
-  border-radius: 5px;
-  color: var(--primary-color);
 }
 
 .description__imb-box img {
@@ -1269,6 +1200,62 @@ a {
   background-color: var(--primary-color);
   margin-top: 7px;
   cursor: pointer;
+} 
+
+.offer{
+  list-style: none;
+}
+.offer__item{
+  width: 380px;
+  height: 88px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+}
+.offer__link{
+  text-decoration: none;
+}
+.offer__inner{
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(to left bottom,#dee4f3,#e7eaf6,#f0f1f9,#f8f8fc,#fff);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer__title{
+  font-size: 19px;
+  font-family: var(--text-font);
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  color: var(--title-color);
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+.offer__icons{
+  font-size: 30px;
+  color: var(--primary-color);
+}
+.offer__item--active{
+  background-color: var(--primary-color);
+}
+.offer__title--active{
+  color: #fff;
+}
+.offer__item:hover{
+  background-color: var(--primary-color);
+  transition: all 0.5s ease;
+}
+.offer__item:hover .offer__title{
+  color: #fff;
+  transition: all 0.5s ease;
 }
 
 /* SOLUTIONS MIRZOHID */
