@@ -852,6 +852,129 @@ a {
     }
 }
 
+.clients-opinion__content{
+  background-color: #fff;
+  width: 710px;
+  height: 230px;
+  box-shadow: 0 0 25px 3px rgb(0 0 0 / 4%);
+  margin: 45px auto ;
+  background-color: #fff;
+  position: relative;
+  padding: 60px 70px 60px 190px;
+  border-radius: 5px;
+
+  }
+
+
+.clients-opinion__content-background{
+  background-color: #fff;
+  width: 650px;
+  height: 100px;
+  position: absolute;
+  border-radius: 5px;
+  bottom: -15px;
+  left: 30px;
+  z-index: 0;
+}
+.clients-opinion__content-img-box{
+  position: absolute;
+  left: 80px;
+  top: 20%;
+}
+.clients-opinion__content-inner{
+  width: 450px;
+}
+.clients-opinion__content-inner-text{
+  font-family: var(--text-font);
+  font-size: 15px;
+  color: #4a6f8a;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.clients-opinion__content-list{
+  list-style: none;
+}
+.clients-opinion__icon{
+  color: var(--primary-color);
+  margin-right: 10px;
+  font-size: 18px;
+  z-index: 1000;
+}
+.clients-opinion__content-img{
+  width: 80px;
+  height: 80px;
+  padding: 5px; 
+  border: 2px solid #f4f5fe;
+
+}
+.clients-opinion__content-text{
+      margin-top: 10px;
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--title-color);
+      font-family: var(--title-font);
+      position: relative;
+      top: -3px;
+      left: -10px;
+}
+.clients-opinion__content-discribtion{
+  color: var(--primary-color);
+  margin-top: 5px;
+  font-size: 13px;
+  text-decoration: none;
+  font-family: var(--text-font);
+  position: relative;
+  left: -5px;
+}
+.clients-opinion__quota{
+  font-size: 105px;
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  color: #f5f5f5;
+}
+.clients-opinion__other-page-lists{
+  list-style-type: none;
+  
+  margin: 0 auto;
+  width: 80px;
+}
+.clients-opinion__other-page-items{
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+      transition: .5s;
+      border: 2px solid #8d95a7;
+}
+.clients-opinion__other-page-dot{
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transform: scale(0);
+  transition: .5s;
+  
+}
+.clients-opinion__other-page-items:first-child .clients-opinion__other-page-dot{
+  transform: scale(1);
+}
+
+.clients-opinion__other-page-items:hover .clients-opinion__other-page-dot{
+  transform: scale(1);
+}
+.clients-opinion__other-page-items:first-child{
+  border: solid 1px var(--primary-color);
+
+}
+.clients-opinion__other-page-items:hover{
+  border: solid 1px var(--primary-color);
+
+}
+
 /* jamoliddin finished clients-opinion */
 .ors {
     width: 100%;
@@ -1102,7 +1225,223 @@ a {
     }
 }
 
+/* jamoliddin started trial section */
 
+.trial{
+  width: 100%;
+  background: linear-gradient(to left bottom, #f8f9fd, #fafafd, #fcfcfe, #fdfdfe, #fff);
+  position: relative;
+}
+.trial__img{
+  width: 560px;
+  height: 320px;
+  margin-left: -15px;
+}
+.trial__title{
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--title-color);
+  font-family: var(--title-font);
+  margin-bottom: 25px;
+}
+.trial__input{
+  width: 380px;
+  height: 45px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  color: #fff;
+  border: none;
+  outline: 0;
+  background-color: #333;
+  border-radius: 30px;
+  padding-left: 20px;
+}
+.trial__input::placeholder{
+  color: #C8C8C8;
+  font-family: var(--text-font);
+}
+.trial__btn{
+  height: 45px;
+  border: none;
+  padding: 0 30px;
+  line-height: 45px;
+  background-color: #ff4800;
+  border-radius: 30px;
+  transition: .5s;
+  color: #fff;
+  font-family: Dosis,
+  sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.trial__btn:hover{
+  background-color: var(--hover-color);
+  
+}
+.trial__text{
+  font-size: 15px;
+  color: var(--text-color);
+  line-height: 1.8;
+  font-family: var(--text-font);
+}
+.trial__dot {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  opacity: 0.6;
+  animation: trial-dot 40s linear infinite;
+}
+
+@keyframes trial-dot {
+  0% {
+      transform: translate(0) rotate(0);
+  }
+
+  20% {
+      transform: translate(73px, -1px) rotate(36deg);
+  }
+
+  40% {
+      transform: translate(141px, 72px) rotate(72deg);
+  }
+
+  60% {
+      transform: translate(83px, 122px) rotate(108deg);
+  }
+
+  80% {
+      transform: translate(-40px, 72px) rotate(144deg);
+  }
+
+  100% {
+      transform: translate(0) rotate(0);
+  }
+
+}
+
+/* jamoliddin finished trial section */
+
+.partners{
+  width: 100%;
+  padding: 110px 0 80px;
+  position: relative;
+}
+.partners__list{
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  grid-template-rows: 90px;
+  list-style-type: none;
+}
+.partners__items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners__x {
+  position: absolute;
+  right: 4.5%;
+  top: 50%;
+  animation: rotatepartners-x 10s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotatepartners-x {
+  0% {
+      transform: rotate(0);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+.partners__triangle {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: -1;
+  animation: partnersTriangle 10s linear infinite;
+}
+
+@keyframes partnersTriangle {
+  0% {
+      transform: rotate(0);
+  }
+
+  100% {
+      transform: rotate(1turn);
+  }
+}
+.partners__dot {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: partners-dot 30s linear infinite;
+}
+
+@keyframes partners-dot {
+  0% {
+      transform: translate(0) rotate(0);
+  }
+
+  20% {
+      transform: translate(73px, -1px) rotate(36deg);
+  }
+
+  40% {
+      transform: translate(141px, 72px) rotate(72deg);
+  }
+
+  60% {
+      transform: translate(83px, 122px) rotate(108deg);
+  }
+
+  80% {
+      transform: translate(-40px, 72px) rotate(144deg);
+  }
+
+  100% {
+      transform: translate(0) rotate(0);
+  }
+
+}
+.partners__second-triangle {
+  position: absolute;
+  bottom: 5%;
+  left: 60%;
+  z-index: -1;
+  animation: partners-second-triangle 30s linear infinite;
+}
+
+@keyframes partners-second-triangle {
+  0% {
+      transform: translate(0) rotate(0);
+  }
+
+  20% {
+      transform: translate(-73px, 1px) rotate(36deg);
+  }
+
+  40% {
+      transform: translate(-141px, -72px) rotate(-72deg);
+  }
+
+  60% {
+      transform: translate(-83px, -122px) rotate(-108deg);
+  }
+
+  80% {
+      transform: translate(40px, -72px) rotate(-144deg);
+  }
+
+  100% {
+      transform: translate(0) rotate(0);
+  }
+
+}
+/* jamoliddin finished partners section */
 
 .featured-customers {
     width: 100%;
