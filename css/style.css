@@ -80,7 +80,7 @@ a {
   margin: 0 12px;
 }
 
-.feature-title__box {
+.feature__title-box {
   max-width: 670px;
   margin: -6px auto 60px;
 }
@@ -562,7 +562,7 @@ a {
   z-index: 1;
 }
 
-.solutions-title__box {
+.solutions__title-box {
   text-align: center;
   max-width: 670px;
   margin: -6px auto 60px;
@@ -573,7 +573,7 @@ a {
   margin: 10px auto 0;
 }
 
-.solutions-content__box {
+.solutions__content-box {
   position: relative;
 }
 
@@ -614,7 +614,7 @@ a {
   color: white;
 }
 
-.description__imb-box,
+.description-imb__box,
 .description__content {
   padding-left: 30px;
   margin-bottom: 30px;
@@ -653,7 +653,7 @@ a {
   color: red;
 }
 
-.description__imb-box img {
+.description-imb__box img {
   position: relative;
   width: 75%;
 }
@@ -918,7 +918,7 @@ a {
   display: block;
 }
 
-.items-cart__link {
+.items-cartlink {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -939,20 +939,20 @@ a {
   transform: translateY(0);
 }
 
-.items-cart__link p {
+.items-cartlink p {
   color: white;
   margin: 0;
 }
 
-.items-cart__link i {
+.items-cartlink i {
   padding-top: 5px;
 }
 
-.items-cart__link:hover {
+.items-cartlink:hover {
   background-color: red;
   color: white;
 }
-.items-list:hover .items-cart__link {
+.items-list:hover .items-cartlink {
   opacity: 1;
   visibility: visible;
 }
@@ -1024,7 +1024,7 @@ a {
   font-family: "Dosis", sans-serif;
 }
 
-.btns__pages {
+.shoparea__btns-pages {
   width: 40px;
   height: 40px;
   margin: 0 3px;
@@ -1038,12 +1038,12 @@ a {
   transition: all 0.5s ease;
 }
 
-.btns__pages:hover {
+.shoparea__btns-pages:hover {
   background: #ff4800;
   color: white;
 }
 
-.btns__pages.active {
+.shoparea__btns-pages.active {
   background: #ff4800;
   color: white;
 }
