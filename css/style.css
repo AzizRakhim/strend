@@ -1603,9 +1603,9 @@ a {
 /* jamoliddin finished featured customers section */
 /* jamoliddin started feedback-area section */
 .feedback-area{
-    width: 100%;
+    /* width: 100%; */
     height: 430px;
-   position: relative;
+    position: relative;
 }
 .feedback-area__img-box{
     position: absolute;
@@ -1635,7 +1635,6 @@ a {
 }
 .feedback-area__inner{
     position: relative;
-    left: -120px;
     z-index: 100;
     padding: 100px 0;
     width: 650px;
