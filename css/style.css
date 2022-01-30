@@ -1115,6 +1115,57 @@ a {
     color: var(--primary-color);
 }
 
+.pagination-area {
+  width: 100%;
+  margin: 40px 0 30px;
+  text-align: center;
+  font-family: var(--title-font);
+}
+
+.page-numbers {
+  width: 40px;
+  height: 40px;
+  margin: 0 3px;
+  display: inline-block;
+  background-color: #fff;
+  line-height: 40px;
+  color: #333;
+  box-shadow: 0 2px 10px 0 #d8dde6;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.nuxt-link-exact-active {
+  width: 40px;
+  height: 40px;
+  margin: 0 3px;
+  display: inline-block;
+  background-color: #fff;
+  line-height: 40px;
+  color: #333;
+  box-shadow: 0 2px 10px 0 #d8dde6;
+  font-size: 16px;
+  font-weight: 700;
+  transition: .5s;
+}
+
+.page-numbers:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.nuxt-link-exact-active:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.active-page-number {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
 .ors__triangle {
     position: absolute;
     top: 5%;
@@ -1713,6 +1764,185 @@ a {
     background-image: url('https://strend-vue.envytheme.com/_nuxt/img/bg-2.97f0087.png');
 
 }
+
+/* TRIAL END */
+/* CONTACT START */
+
+.contact-area {
+  width: 100%;
+  padding: 110px 0;
+  position: relative;
+}
+
+.contact-area__inner {
+  margin: 0 auto;
+  width: 520px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-area__span {
+  display: block;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: var(--title-font);
+}
+
+.contact-area__title {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: var(--title-font);
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+
+.contact-area__text {
+  font-size: 15px;
+  color: #57647c;
+  line-height: 1.8;
+  font-family: var(--text-font);
+}
+
+.contact-area__form {
+  width: 640px;
+  padding-left: 50px;
+}
+
+.contact-area__form-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+}
+
+.contact-area__input {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 5px 28.5px 1.5px rgb(149 152 200 / 20%);
+  height: 50px;
+  font-family: var(--title-font);
+  font-size: 16px;
+  transition: .5s;
+  color: #333;
+  padding: 6px 13px;
+  outline: 0;
+}
+
+.contact-area__textarea {
+  grid-column: 1/3;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 5px 28.5px 1.5px rgb(149 152 200 / 20%);
+  font-family: var(--title-font);
+  font-size: 16px;
+  transition: .5s;
+  color: #333;
+  padding: 15px 13px;
+  outline: 0;
+}
+
+.contact-area__input::placeholder {
+  color: #999;
+}
+
+.contact-area__input-submit {
+  padding: 13px 35px 15px;
+  grid-column: 1/3;
+  font-size: 17px;
+
+  box-shadow: 0 5px 28.5px 1.5px rgb(149 152 200 / 50%);
+  color: #fff;
+  background-color: #ff4800;
+  border: none;
+  border-radius: 30px;
+  transition: .5s;
+  font-size: 16px;
+  font-family: var(--title-font);
+  font-weight: 600;
+  margin: 0 auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.contact-area__input-submit:hover {
+  background-color: #4ac728;
+  color: #fff;
+  box-shadow: unset;
+}
+
+
+
+.contact-area__info-content{
+  text-align: center;
+  padding-top: 80px;
+}
+.contact-area__info-title{
+      font-size: 23px;
+      font-weight: 700;
+      color: var(--title-color);
+      font-family: var(--title-font);
+      margin-bottom: 15px;
+}
+.contact-area__info-tel{
+      display: block;
+      color: var(--primary-color);
+      font-size: 40px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: .5s;
+      margin-bottom: 10px;
+
+      
+}
+.contact-area__info-tel:hover{
+  color: var(--hover-color);
+}
+.contact-area__or{
+      display: block;
+      color: var(--text-color);
+      margin-top: 8px;
+      margin-bottom: 0;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 5px;
+}
+.contact-area__info-email{
+  text-decoration: none;
+  color: #4ac728;
+  font-size: 40px;
+     font-weight: 700;
+     transition: .5s;
+}
+.contact-area__info-email:hover{
+  color: var(--primary-color);
+}
+.contact-area__app-list{
+  justify-content: center;
+  list-style: none;
+  margin-top: 20px;
+}
+.contact-area__app-items{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #dadada;
+  border-radius: 50%;
+  color: #aba5a5;
+      transition: .5s;
+      font-size: 18px;
+      margin-right: 10px;
+}
+.contact-area__app-items:hover{
+      color: #fff;
+      border-color: #ff4800;
+      background-color: #ff4800;
+}
+
+/* CONTACT END */
+
 
 /********************FEATURE MIRZOHID*******************/
 /********************FEATURE MIRZOHID*******************/
