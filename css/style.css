@@ -2281,9 +2281,9 @@ a {
   font-family: var(--title-font);
 }
 
-.smartapproach-content__about p {
+/* .smartapproach-content__about p {
   margin-bottom: 13px;
-}
+} */
 
 .faeture-list {
   padding-left: 0;
@@ -2316,7 +2316,7 @@ a {
 .faeture-list span p {
   font-size: 15px;
   color: #57647c;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   line-height: 1.8;
   font-family: "Open Sans";
 }
@@ -2354,6 +2354,7 @@ a {
   font-size: 16px;
   font-family: "Dosis", sans-serif;
   font-weight: 600;
+  display: inline-block;
 }
 
 .smartapproach-content__about a,
