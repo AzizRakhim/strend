@@ -1023,7 +1023,7 @@ a {
     height: 570px;
     border-radius: 5px;
     background-color: #f4faff;
-    transition: .5s;
+    transition: 0.5s;
     margin-bottom: 30px;
 }
 
@@ -1031,6 +1031,7 @@ a {
     width: 415px;
     height: 340px;
     border-radius: 5px;
+    transition: 0.5s;
 }
 
 .ors__items-inner {
@@ -2079,7 +2080,7 @@ a {
   font-family: "Dosis", sans-serif;
   margin-top: 12px;
   font-size: 16px;
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
 }
 
 .feature-contentlink::after {
@@ -2091,7 +2092,7 @@ a {
   background-color: #ff4800;
   height: 0.5px;
   width: 100%;
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
 }
 
 .feature-contentlink:hover:after {
