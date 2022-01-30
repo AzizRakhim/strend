@@ -581,6 +581,8 @@ a {
     100% {
         transform: rotate(1turn);
     }
+  }
+
 .banner img:nth-child(2){
     position: absolute;
     left: 87px;
@@ -848,7 +850,6 @@ a {
     100% {
         transform: translate(0) rotate(0);
     }
-
 }
 
 /* jamoliddin finished clients-opinion */
@@ -1279,6 +1280,72 @@ a {
     height: 400px;
     position: relative;
 }
+
+.hold-it{
+  position: relative;
+}
+
+
+.free-trial__inner{
+    position: absolute;
+    z-index: 2;
+    width: 565px;
+    padding-left: 30px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    right: 0;
+}
+
+.free-trial__title{
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--bg-color);
+  font-family: var(--title-font);
+  margin-bottom: 25px;
+}
+.free-trial__input{
+  width: 380px;
+  height: 45px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  color: #fff;
+  border: none;
+  outline: 0;
+  background-color: #333;
+  border-radius: 30px;
+  padding-left: 20px;
+}
+.free-trial__input::placeholder{
+  color: #C8C8C8;
+  font-family: var(--text-font);
+}
+.free-trial__btn{
+  height: 45px;
+  border: none;
+  padding: 0 30px;
+  line-height: 45px;
+  background-color: var(--bg-color);
+  border-radius: 30px;
+  transition: .5s;
+  color: var(--primary-color);
+  font-family: Dosis,
+  sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.free-trial__btn:hover{
+  background-color: var(--hover-color);
+  color: var(--bg-color);
+  
+}
+.free-trial__text{
+  font-size: 15px;
+  color: var(--bg-color);
+  line-height: 1.8;
+  font-family: var(--text-font);
+}
+
 .free-trial__img-box {
     position: absolute;
     left: 0;
