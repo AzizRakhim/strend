@@ -1,23 +1,1049 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
-:root{
-    --title-color: #333;
-    --text-color: #57647c;
-    --primary-color: #ff4800;
-    --bg-color: #fff;
-    --title-font: 'Doris';
-    --text-font: 'Open Sans';
-    --hover-color: #4bc527;
+:root {
+  --title-color: #333;
+  --text-color: #57647c;
+  --primary-color: #ff4800;
+  --bg-color: #fff;
+  --title-font: "Dosis";
+  --text-font: "Open Sans";
+  --hover-color: #4bc527;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color: #fff;
-    min-height: 100vh;
-    font-family: var(--title-font);
+body {
+  background-color: #fff;
+  min-height: 100vh;
+  font-family: var(--title-font);
 }
 
+.container {
+  width: 1140px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color: #57647c;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/********************FEATURE MIRZOHID*******************/
+/********************FEATURE MIRZOHID*******************/
+
+.main {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  position: relative;
+  padding: 110px 0;
+}
+
+.feature {
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+  margin: 0 12px;
+}
+
+.feature-title__box {
+  max-width: 670px;
+  margin: -6px auto 60px;
+}
+
+.title {
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: #333;
+  font-family: var(--title-font), sans-serif;
+  line-height: 1.2;
+}
+
+.feature-subtitle {
+  max-width: 520px;
+  margin: 10px auto 0;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #57647c;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-weight: 500;
+  font-family: "Open Sans";
+}
+
+.feature-content {
+  position: relative;
+  padding: 0 12px;
+}
+
+.feature-content__inner {
+  position: relative;
+  z-index: 1;
+  padding: 35px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background: linear-gradient(
+    to left bottom,
+    #dee4f3,
+    #e7eaf6,
+    #f0f1f9,
+    #f8f8fc,
+    #fff
+  );
+  transition: all 0.4s ease 0.4s;
+}
+
+.feature-icon {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 25px;
+}
+
+.feature-icon::before {
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(90deg, #dee4f3, #e7eaf6, #f0f1f9, #f8f8fc, #fff);
+  position: absolute;
+  left: -10px;
+  top: 0%;
+  z-index: -1;
+  content: "";
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.feature-icon img {
+  transition: all 0.5s;
+}
+
+.feature-contenttitle {
+  margin-bottom: 0;
+  transition: 0.5s;
+  font-size: 23px;
+  font-weight: 700;
+  color: #333;
+  font-family: "Dosis";
+  line-height: 28px;
+}
+
+.feature-contenttitle a {
+  display: block;
+  transition: 0.5s;
+  color: #333;
+}
+
+.feature-contenttitle a:hover {
+  color: red;
+}
+
+.feature-contenttext {
+  margin-top: 13px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: "Open Sans";
+  color: #57647c;
+}
+
+.feature-contentlink {
+  display: inline-block;
+  position: relative;
+  color: #ff4800;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  margin-top: 12px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.feature-contentlink::after {
+  content: "";
+  top: 100%;
+  left: 0;
+  position: absolute;
+  color: #ff4800;
+  background-color: #ff4800;
+  height: 2px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.feature-contentlink:hover:after {
+  width: 0%;
+}
+
+.feature-content__inner:hover > .feature-icon::before {
+  transform: rotateY(180deg);
+}
+
+.feature-content__inner:hover > .feature-icon img {
+  transform: rotateY(180deg);
+}
+
+/*triangle*/
+.feature-triangle img {
+  position: absolute;
+  display: inline-block;
+  z-index: -1;
+  left: 5%;
+  top: 5%;
+  animation-name: rotateMe;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation: rotation 2s infinite linear; */
+}
+
+@keyframes rotateMe {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/*triangle*/
+
+/*oracle*/
+.feature-triangle img,
+.feature-oracle img,
+.feature-eks img,
+.feature-circle img,
+.feature-quadrople img {
+  position: absolute;
+  display: inline-block;
+  z-index: -1;
+  left: 5%;
+  top: 5%;
+  animation-name: rotateMe;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation: rotation 2s infinite linear; */
+}
+
+@keyframes rotateMe {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/*oracle*/
+.feature-oracle img {
+  animation-name: oracle;
+  animation-duration: 10s;
+  left: 85%;
+  top: 5%;
+  opacity: 0.2;
+}
+
+@keyframes oracle {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
+
+/*feature x*/
+.feature-eks img {
+  animation-name: eks;
+  animation-duration: 10s;
+  left: 95%;
+  top: 50%;
+  opacity: 1;
+}
+
+@keyframes eks {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/*feature circle*/
+.feature-circle img {
+  animation-name: circlee;
+  animation-duration: 10s;
+  left: 50%;
+  top: 10%;
+  opacity: 0.5;
+  animation: animationFramesTwo 40s linear reverse infinite;
+}
+
+@keyframes animationFramesTwo {
+  0% {
+    left: 50%;
+    top: 10%;
+  }
+  25% {
+    left: 60%;
+    top: 15%;
+  }
+  50% {
+    left: 60%;
+    top: 20%;
+  }
+  75% {
+    left: 45%;
+    top: 20%;
+  }
+  100% {
+    left: 50%;
+    top: 10%;
+  }
+}
+
+/*quadrole img*/
+.feature-quadrople img {
+  animation-name: quadrople;
+  animation-duration: 20s;
+  left: 5%;
+  top: 50%;
+  opacity: 1;
+}
+
+@keyframes quadrople {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  33% {
+    transform: translate(100px, 100px);
+  }
+  66% {
+    transform: translate(0px, 100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+/********************FEATURE MIRZOHID*******************/
+/********************FEATURE MIRZOHID*******************/
+
+/*******************SMARTAPPROACH MIRZOHID**************/
+/*******************SMARTAPPROACH MIRZOHID**************/
+
+.smartapprouch {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.smartapprouch-inner {
+  position: relative;
+  padding-bottom: 110px;
+}
+
+.smartapproach-img,
+.smartapproach-content {
+  padding: 0 12px;
+}
+
+.smartapproach-content__about {
+  margin-top: 50px;
+  padding-left: 25px;
+}
+
+.smartapproach-content__about h2 {
+  margin-bottom: 18px;
+  line-height: 1.3;
+  font-size: 40px;
+  font-weight: 700;
+  color: #333;
+  font-family: var(--title-font);
+}
+
+.smartapproach-content__about p {
+  margin-bottom: 13px;
+}
+
+.faeture-list {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-right: -10px;
+}
+
+.faeture-list li {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 13px;
+}
+
+.faeture-list span {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  color: #333;
+  /* padding-left: 28px; */
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.faeture-list span p {
+  font-size: 15px;
+  color: #57647c;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-family: "Open Sans";
+}
+
+.faeture-list span p::before {
+  content: "✓";
+  position: relative;
+  top: 0;
+  left: -10px;
+  width: 20px;
+  display: inline-block;
+  height: 20px;
+  border-radius: 2px;
+  color: #fff;
+  line-height: 16px;
+  background-color: #ff4800;
+  text-align: center;
+  transition: 0.5s;
+  padding: 2px;
+}
+
+.faeture-list span p:hover::before {
+  background-color: #61c628;
+}
+
+.btn {
+  border: none;
+  line-height: normal;
+  border-radius: 30px;
+  transition: 0.5s;
+  padding: 10px 32px 12px;
+  position: relative;
+  z-index: 1;
+  opacity: 1 !important;
+  font-size: 16px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+
+.smartapproach-content__about a,
+.description-content a {
+  color: #fff;
+  background-color: #ff4800;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.smartapproach-content__about a:hover,
+.description__content a:hover {
+  background-color: #61c628;
+}
+
+/*smartapproach-bg */
+
+.smartapproach-bg {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  opacity: 0.4;
+}
+
+/*smartapprouch-oracle*/
+
+.smartapprouch-oracle {
+  position: absolute;
+  display: inline-block;
+  z-index: -1;
+  left: 0;
+  top: 0%;
+  animation-name: oracle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  left: 85%;
+  opacity: 0.2;
+}
+
+@keyframes oracle {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
+
+/*smartapproach-triangle*/
+.smartapproach-triangle {
+  position: absolute;
+  display: inline-block;
+  z-index: -1;
+  left: 50%;
+  top: 80%;
+  opacity: 1;
+  animation: smarttriangle 20s linear reverse infinite;
+}
+
+@keyframes smarttriangle {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(200px, 50px);
+  }
+  50% {
+    transform: translate(0px, 100px);
+  }
+  75% {
+    transform: translate(-200px, 50px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+/*******************SMARTAPPROACH MIRZOHID**************/
+/*******************SMARTAPPROACH MIRZOHID**************/
+
+/*******************SOLUTIONS MIRZOHID**************/
+/*******************SOLUTIONS MIRZOHID**************/
+.solutions {
+  background-color: #f2f6f9;
+  position: relative;
+  z-index: 1;
+}
+
+.solutions-title__box {
+  text-align: center;
+  max-width: 670px;
+  margin: -6px auto 60px;
+}
+
+.solutions-subtitle {
+  max-width: 520px;
+  margin: 10px auto 0;
+}
+
+.solutions-content__box {
+  position: relative;
+}
+
+.solutions-process ul {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.solutions-process ul li {
+  border-radius: 5px;
+  background-color: white;
+}
+
+.solutions-process ul li a {
+  display: block;
+  position: relative;
+  padding: 30px 10px 30px 100px;
+  color: #313e5b;
+  font-size: 19px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.solutions-process ul li:nth-of-type(1) {
+  background-color: #ff4800;
+  color: white;
+}
+
+.solutions-process ul li a:hover {
+  background-color: #ff4800;
+  color: white;
+}
+
+.description__imb-box,
+.description__content {
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.danalysis::before,
+.aoptimization::before,
+.ssurveillance::before,
+.hmanagers::before,
+.stengineers::before,
+.itprofessionalas::before {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  font-family: "FontAwesome";
+  font-size: 30px;
+  content: "\f1ea";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(
+    to left bottom,
+    #dee4f3,
+    #e7eaf6,
+    #f0f1f9,
+    #f8f8fc,
+    #fff
+  );
+  text-align: center;
+  line-height: 55px;
+  border-radius: 5px;
+  color: red;
+}
+
+.description__imb-box img {
+  position: relative;
+  width: 75%;
+}
+
+.description__content p {
+  font-size: 15px;
+  color: #57647c;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-family: "Open Sans";
+}
+
+.description__content a {
+  color: #fff;
+  background-color: #ff4800;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+/*******************SOLUTIONS MIRZOHID**************/
+/*******************SOLUTIONS MIRZOHID**************/
+
+/********************SHOP PAGE***********************/
+/********************SHOP PAGE***********************/
+
+/********************SHOP PAGE***********************/
+/********************SHOP PAGE***********************/
+
+.shophero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url(../image/shoppage-titlebg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  padding-top: 210px;
+  padding-bottom: 140px;
+  background-position: 50%;
+}
+
+.shophero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.shophero-inner h2 {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+.shophero-inner ul {
+  padding-left: 0;
+  list-style-type: none;
+  font-family: "Dosis", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.shophero-inner ul li {
+  display: inline-block;
+  color: #fff;
+  margin-right: 10px;
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.shophero-inner ul li:nth-child(1) {
+  margin: 0;
+}
+
+.shophero-inner ul li i {
+  font-size: 12px;
+}
+
+.shophero-inner ul li a {
+  color: red;
+}
+
+.shophero-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+  z-index: -1;
+}
+
+.shophero-line {
+  width: 1px;
+  left: 50%;
+  background: hsla(0, 0%, 100%, 0.1);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.shophero-lines .shophero-line:first-child {
+  margin-left: -25%;
+  animation-delay: 2s;
+}
+
+.shophero-lines .shophero-line:last-child {
+  margin-left: 25%;
+  animation-delay: 2.5s;
+}
+
+.shophero-line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, #fff 75%, #fff);
+  animation: run 7s 0s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+@keyframes run {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+/*shop area*/
+
+.shoparea {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.shoparea-topbare {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.topbare-dropdown {
+  margin-left: 8rem;
+  box-shadow: 0 0 29px 0 hsl(0deg 0% 40% / 10%);
+}
+
+.topbare-btn {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0;
+  border: none;
+  line-height: normal;
+  padding: 15px 15px 15px 20px;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 500;
+  color: #57647c;
+}
+
+.topbare-btn i {
+  font-size: 16px;
+  color: #57647c;
+  text-align: right;
+  position: relative;
+  justify-content: right;
+  display: inline-block;
+  left: 45%;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.topbare-btn:hover {
+  background-color: #fff;
+  color: #57647c;
+}
+
+.dropdown-menu {
+  width: 100%;
+  padding: 0;
+}
+
+.link {
+  padding: 0 1rem;
+}
+
+.link:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/*shop area*/
+
+.shoparea-items {
+  text-align: center;
+  width: 380px;
+  height: 546px;
+  padding: 0 12px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+
+.items-list {
+  width: 100%;
+  height: 100%;
+  transition: 5s;
+  background-color: #fff;
+  box-shadow: 0 0 40px 3px rgb(0 0 0 / 5%);
+}
+
+.items-img {
+  width: 100%;
+  height: 378px;
+}
+
+.items-link:first-child {
+  width: 100%;
+  height: 100%;
+}
+
+.items-link img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.items-link img:last-child {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translateY(-375px);
+  display: none;
+}
+
+.items-list:hover .items-link img:last-child {
+  display: block;
+}
+
+.items-cart__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: -14%;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  font-family: "Dosis", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  transform: translateY(0);
+}
+
+.items-cart__link p {
+  color: white;
+  margin: 0;
+}
+
+.items-cart__link i {
+  padding-top: 5px;
+}
+
+.items-cart__link:hover {
+  background-color: red;
+  color: white;
+}
+.items-list:hover .items-cart__link {
+  opacity: 1;
+  visibility: visible;
+}
+
+.items-content {
+  padding: 25px;
+}
+
+.items-content h3 {
+  margin-bottom: 8px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #333;
+  font-family: "Dosis", sans-serif;
+  line-height: 1.2;
+}
+
+.items-content__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.items-content__price span:first-child {
+  color: #333;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+}
+
+.items-content__price span:last-child {
+  text-decoration: line-through;
+  color: #828893;
+  margin-left: 10px;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.checked {
+  color: orange;
+}
+
+.sale-btn {
+  position: relative;
+  top: -110%;
+  left: 20px;
+  background-color: red;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+
+.items-link {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
+/*numbers*/
+
+.shoparea__btns {
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+}
+
+.btns__pages {
+  width: 40px;
+  height: 40px;
+  margin: 0 3px;
+  display: inline-block;
+  background-color: #fff;
+  line-height: 40px;
+  color: #333;
+  box-shadow: 0 2px 10px 0 #d8dde6;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+.btns__pages:hover {
+  background: #ff4800;
+  color: white;
+}
+
+.btns__pages.active {
+  background: #ff4800;
+  color: white;
+}
