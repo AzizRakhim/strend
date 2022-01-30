@@ -207,6 +207,7 @@ a {
 }
 
 .feature-contentlink:hover:after {
+  color: #ff4800;
   width: 0%;
 }
 
@@ -696,6 +697,10 @@ a {
   cursor: pointer;
 }
 
+.btn-primary:hover {
+  background-color: var(--hover-color);
+}
+
 /*******************SOLUTIONS MIRZOHID**************/
 /*******************SOLUTIONS MIRZOHID**************/
 
@@ -1056,15 +1061,6 @@ a {
 }
 
 /*shop dropdown btn*/
-
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
-a:hover {
-  color: #222222;
-}
 
 /* Dropdown */
 
