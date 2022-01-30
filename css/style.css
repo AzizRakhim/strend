@@ -3401,7 +3401,7 @@ a {
   content: "";
   width: 20px;
   height: 3px;
-  background-color: red;
+  background-color: var(--primary-color);
   display: inline-block;
   position: absolute;
   left: 0;
