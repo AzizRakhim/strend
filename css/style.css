@@ -2572,6 +2572,9 @@ a {
 /* SOLUTIONS MIRZOHID */
 /* SHOP PAGE MIRZOHID**/
 
+
+/*shop area*/
+
 .shoparea {
   padding-top: 110px;
   padding-bottom: 110px;
@@ -2637,83 +2640,84 @@ a {
 }
 
 .items-list {
+  position: relative;
   width: 100%;
-  height: 100%;
-  transition: 5s;
   background-color: #fff;
   box-shadow: 0 0 40px 3px rgb(0 0 0 / 5%);
+  transition: all 2s ease-in-out 2s;
 }
 
-.items-img {
-  width: 100%;
-  height: 378px;
-}
-
-.items-link:first-child {
+.items-link {
+  display: block;
   width: 100%;
   height: 100%;
 }
-
 .items-link img {
   position: relative;
   display: block;
   width: 100%;
-  height: 100%;
-  transition: all 0.5s;
 }
 
 .items-link img:last-child {
-  position: relative;
+  display: inline-block;
+  position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(-375px);
-  display: none;
+  opacity: 0;
+  transition: 0.8s;
 }
 
 .items-list:hover .items-link img:last-child {
-  display: block;
+  opacity: 1;
 }
 
 .items-cartlink {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  top: -14%;
+  position: absolute;
+  bottom: 22.5%;
   left: 0;
-  width: 100%;
+  right: 0;
   background-color: #333;
   color: #fff;
-  padding: 12px 20px;
-  text-transform: uppercase;
-  opacity: 0;
-  visibility: hidden;
-  font-family: "Dosis", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  transition: all 0.5s ease;
-  transform: translateY(0);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: space-between;
 }
 
-.items-cartlink p {
+.items-list:hover .items-cartlink {
+  height: 10%;
+}
+
+
+.items-cartlink p,
+.items-cartlink i {
   color: white;
-  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: "Dosis";
+  text-transform: uppercase;
 }
 
 .items-cartlink i {
-  padding-top: 5px;
+  left: 90%;
+  font-size: 20px;
 }
 
 .items-cartlink:hover {
-  background-color: red;
-  color: white;
-}
-.items-list:hover .items-cartlink {
-  opacity: 1;
-  visibility: visible;
+  background-color: #ff4800;
 }
 
+/*shu yerni o'zgartiraman*/
 .items-content {
+  position: relative;
   padding: 25px;
 }
 
@@ -2751,8 +2755,8 @@ a {
 }
 
 .sale-btn {
-  position: relative;
-  top: -110%;
+  position: absolute;
+  top: 5%;
   left: 20px;
   background-color: red;
   color: #fff;
