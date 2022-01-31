@@ -2485,9 +2485,14 @@ a {
   padding-left: 20px;
 }
 
-.trial__input::placeholder {
+.trial__input::placeholder{
   color: #C8C8C8;
   font-family: var(--text-font);
+  opacity: 1; 
+  transition: .5s;
+}
+.trial__input:focus::placeholder{
+    opacity: 0;
 }
 
 .trial__btn {
@@ -3686,7 +3691,7 @@ a {
   width: 650px;
 }
 
-.bxs-quote-alt-left {
+.feedback-area__quote {
   font-size: 70px;
   color: #f8b5a6;
 }
