@@ -4329,8 +4329,8 @@ a {
 }
 
 .sale-btn {
-  position: relative;
-  top: -110%;
+  position: absolute;
+  top: 5%;
   left: 20px;
   background-color: var(--primary-color);
   color: var(--bg-color);
